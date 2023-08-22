@@ -15,7 +15,7 @@ console.log('My favorite foods are:', favoriteFoods);
 
 
 // Array.length - tells you how many items are in the array
-console.log(favoriteFoods.length);
+console.log('--- 2. Length of an array ---');
 
 // Example: How many animals are in the array?
 let numberOfAnimals = animalArray.length
@@ -72,7 +72,7 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 //      Add the `entree` at the beginning of the array & log the array
 let entree = 'Coq au vin';
 favoriteFoods.unshift(entree);
-console.log(favoriteFoods);
+console.log(`Added a food to beginning: ${favoriteFoods}`);
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
