@@ -86,8 +86,8 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      at the end of your array & assign it to `lastColor`.
 //      Console log both the color removed and the updated array.
 let lastColor = colors.pop();
-console.log(lastColor);
-console.log(colors); 
+console.log('Removed the last color', lastColor);
+console.log('The colors are now', colors); 
 
 // Example: Remove the first color using Array.shift
 removedAnimal = animalArray.shift();
@@ -107,6 +107,8 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'
 //      Console log the updated array.
+
+    // Solutions found on Mozilla's developer pages
 gems.splice(1, 1, 'Tourmaline');
 console.log(gems);
 
@@ -129,12 +131,22 @@ console.log(gemString);
 //     Console log the new array.
 //     It should look something like:
 //     ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
-let colorfulGems = [...gems, ...colors];
-console.log(colorfulGems);
+
+    // This was the first solution I found when googling. Everything breaks if I use both solutions.
+        // let colorfulGems = [...gems, ...colors];
+        // console.log(colorfulGems);
 
 // Does this want to iterate over the arrays rather than push? Seems like it.
-
-
+    // Here's my other version. Better practice and maybe the more intended way to irerate over the arrays,
+    // especially since iterating is mentioned in the comment here. So I made this solution:
+let colorfulGems = [];
+for (let gem in gems) {
+  colorfulGems.push(gems[gem]);
+}
+for (let color in colors) {
+  colorfulGems.push(colors[color]);
+}
+console.log(colorfulGems);
 
 
 // DO NOT MODIFY
