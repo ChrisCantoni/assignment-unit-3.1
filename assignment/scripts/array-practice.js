@@ -98,8 +98,8 @@ console.log('The animals are now', animalArray);
 //      at the beginning of your array & assign it to `firstColor`.
 //      Console log both the color removed and the updated array.
 let firstColor = colors.shift();
-console.log(firstColor);
-console.log(colors);
+console.log('Removed the first color', firstColor);
+console.log('The colors are now', colors);
 
 // STRETCH GOALS:
 
