@@ -132,13 +132,13 @@ console.log(gemString);
 //     It should look something like:
 //     ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 
-    // This was the first solution I found when googling. Everything breaks if I use both solutions.
+        // This was the first solution I found when googling. Everything breaks if I use both solutions.
         // let colorfulGems = [...gems, ...colors];
         // console.log(colorfulGems);
 
 // Does this want to iterate over the arrays rather than push? Seems like it.
-    // Here's my other version. Better practice and maybe the more intended way to irerate over the arrays,
-    // especially since iterating is mentioned in the comment here. So I made this solution:
+      // Here's my other version. Better practice and maybe the more intended way to iterate over the arrays,
+      // especially since iterating is mentioned in the comment here. So I made this solution:
 let colorfulGems = [];
 for (let gem in gems) {
   colorfulGems.push(gems[gem]);
